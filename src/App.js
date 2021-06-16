@@ -11,7 +11,7 @@ class App extends Component {
       <BrowserRouter>
         <Provider store={store}>
           <Switch>
-            <Route path='/records' component={Table} />
+            <Route path='/' component={Table} />
           </Switch>
         </Provider>
       </BrowserRouter>
