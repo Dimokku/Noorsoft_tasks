@@ -6,7 +6,6 @@ const Row = (props) => {
     const [rowData, setRowData] = useState(props.record.data)
 
     const editHandler = (value, title) => {
-        // Это мой хитрый способ добавить к объекту свойства с нужными именами.
         setRowData({ ...rowData, [title]: value })
     }
 
