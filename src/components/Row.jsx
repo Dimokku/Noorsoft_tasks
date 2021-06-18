@@ -7,9 +7,7 @@ const Row = (props) => {
 
     const editHandler = (value, title) => {
         // Это мой хитрый способ добавить к объекту свойства с нужными именами.
-        let obj = {}
-        obj[title] = value
-        setRowData({ ...rowData, ...obj })
+        setRowData({ ...rowData, [title]: value })
     }
 
     const editClickHandler = (e) => {
